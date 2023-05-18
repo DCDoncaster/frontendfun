@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header { 
+  background-image: linear-gradient(to right, yellow, magenta);
+  padding:15px;
+}
+
+header input{
+  display: inline-block;
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  background: transparent;
+  outline: none;
+  border: none;
+  appearance: none;
+}
+
+header:before{
+  content: '/r/';
+  display: inline-block;
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  background-color: none;
+  outline: none;
+  border: none;
+  appearance: none;
+}
+
+.articles article{
+  padding: 30px 15px;
+  background-color: white;
+}
+.articles article a{
+  text-decoration: none;
+}
+.articles h3{
+  color: black;
+}
+
+.articles article:nth-child(2n){
+  background-color: #F3F3F3;
+}
+.articles article:hover{
+  background-color: yellow;
+}

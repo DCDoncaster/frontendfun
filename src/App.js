@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MenuBar from './Components/MenuBar';
 import Home from './Components/Home';
 import Jokes from './Components/Jokes';
-import Page2 from './Components/Page2';
+import Reader from './Components/Reader';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/Jokes" element={<Jokes />} />
-          <Route path="/player2" element={<Page2 />} />
+          <Route path="/Reader" element={<Reader />} />
         </Routes>
       </BrowserRouter>
 

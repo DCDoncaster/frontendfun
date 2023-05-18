@@ -5,7 +5,7 @@ function Jokes() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('https://v2.jokeapi.dev/joke/Programming,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart&amount=20')
+    fetch('https://v2.jokeapi.dev/joke/Programming,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart&amount=10')
       .then(response => response.json())
       .then(data => setData(data.jokes));
   }, []);
