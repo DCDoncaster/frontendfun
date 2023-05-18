@@ -20,7 +20,7 @@ code {
 }
 
 header { 
-  background-image: linear-gradient(to right, yellow, magenta);
+  background-image: linear-gradient(to right, orange,orangered);
   padding:15px;
 }
 
@@ -62,5 +62,16 @@ header:before{
   background-color: #F3F3F3;
 }
 .articles article:hover{
-  background-color: yellow;
+  background-color: orange;
+}
+
+header p{
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: none;
+  outline: none;
+  border: none;
+  appearance: none;
+  font-style: italic;
 }
