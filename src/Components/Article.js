@@ -10,7 +10,7 @@ function Article(props) {
             {props.article.thumbnail[0] == "h" ? (
               <Image src={props.article.thumbnail} />
             ) : (
-              ""
+              <Image src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-16.png" fluid/>
             )}
           </Col>
           <Col>
