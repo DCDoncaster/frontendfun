@@ -8,12 +8,13 @@ function MenuBar() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="/home">Score Cards</Navbar.Brand>
+            <Navbar.Brand href="/home">Front End Fun</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/home">Home</Nav.Link>
-                <Nav.Link href="/player1">Player 1</Nav.Link>
+                <Nav.Link href="/Jokes">Jokes</Nav.Link>
+                <Nav.Link href="/player2">Page 2</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

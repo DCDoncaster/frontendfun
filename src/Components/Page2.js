@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, ListGroup,Image, Row, Col } from 'react-bootstrap';
 
 
-function Home() {
+function Page1() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -12,14 +12,14 @@ function Home() {
   }, []);
 
   return (<>
- <Container >
+ <Container>
       <ListGroup>
         {data.map((paragraph, index) => (
           <ListGroup.Item key={index}>
-            <Container fluid>
+            <Container>
               <Row>
               <Col md="auto"><Image src={`https://picsum.photos/200?random=${Math.floor(Math.random() * 1000)}`}/></Col>
-              <Col className="square border">{paragraph}</Col>
+              <Col>{paragraph}</Col>
                         </Row>
             </Container>
             </ListGroup.Item>
@@ -30,4 +30,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Page1;
