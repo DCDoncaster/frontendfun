@@ -21,7 +21,7 @@ function Article(props) {
               </Col>
               <Col>
                 <Accordion defaultActiveKey="0">
-                  <Accordion.Item eventKey={props.index} flush>
+                  <Accordion.Item eventKey={props.index}>
                     <Accordion.Header>
                       <Col>
                         <Row>
