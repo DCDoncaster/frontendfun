@@ -36,10 +36,8 @@ useEffect(()=>{
     }
     res.json().then(data=>{
   if(data != null){
-    
-    // setSubredditIcon(data.community_icon);//pass articles to the state
-    console.log(data.data.title)
-    setSubredditTitle(data.data.title)
+        console.log(data.data.title)
+      setSubredditTitle((data.data.over18 === false) ? data.data.title : "You shouldn't be looking at this at work")
      
   };
     });

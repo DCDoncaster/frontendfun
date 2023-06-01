@@ -7,12 +7,14 @@ import Home from './Components/Home';
 import Jokes from './Components/Jokes';
 import Reader from './Components/Reader';
 
+
 function App() {
   return (
 <>
 <MenuBar />
 <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Home />}/>
           <Route path="/home" element={<Home />} />
           <Route path="/Jokes" element={<Jokes />} />
           <Route path="/Reader" element={<Reader />} />

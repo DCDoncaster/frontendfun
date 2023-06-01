@@ -8,7 +8,7 @@ function MenuBar() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="/home">Front End Fun</Navbar.Brand>
+            <Navbar.Brand href="/">Front End Sandbox</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
