@@ -6,6 +6,7 @@ import MenuBar from './Components/MenuBar';
 import Home from './Components/Home';
 import Jokes from './Components/Jokes';
 import Reader from './Components/Reader';
+import NotFound from './Components/NotFound';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}/>
+          <Route path="*" element={<NotFound />} />
           <Route path="/home" element={<Home />} />
           <Route path="/Jokes" element={<Jokes />} />
           <Route path="/Reader" element={<Reader />} />
