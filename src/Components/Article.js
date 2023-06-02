@@ -52,10 +52,11 @@ function Article(props) {
                         </a>
                       </Col>
                     </Accordion.Header>
-                    {props.article.selftext !== null?<>
+                    {props.article.selftext !== ""?<>
                     <AccordionBody>{props.article.selftext}</AccordionBody>
-                    <AccordionBody>Upvotes: {props.article.ups}</AccordionBody></>
-                    :""}
+                    </>
+                    :<AccordionBody>{props.article.url !== "" ? "This post is just a link, click the text above to visit the site" : "This is probably just an image post with no body"}</AccordionBody>}
+                    <AccordionBody>Upvotes: {props.article.ups}</AccordionBody>
                   </Accordion.Item>
                 </Accordion>
               </Col>
