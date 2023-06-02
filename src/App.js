@@ -15,11 +15,11 @@ function App() {
 <MenuBar />
 <BrowserRouter>
         <Routes>
-          <Route path="/frontendfun" element={<Home />}/>
-          <Route path="/frontendfun/*" element={<NotFound />} />
-          <Route path="/frontendfun/home" element={<Home />} />
-          <Route path="/frontendfun/Jokes" element={<Jokes />} />
-          <Route path="/frontendfun/Reader" element={<Reader />} />
+          <Route path="/" element={<Home />}/>
+          <Route path="/*" element={<NotFound />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/Jokes" element={<Jokes />} />
+          <Route path="/Reader" element={<Reader />} />
         </Routes>
       </BrowserRouter>
 
