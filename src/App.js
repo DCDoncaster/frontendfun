@@ -16,10 +16,10 @@ function App() {
 <BrowserRouter>
         <Routes>
           <Route path="/frontendfun" element={<Home />}/>
-          <Route path="*" element={<NotFound />} />
+          <Route path="/frontendfun/*" element={<NotFound />} />
           <Route path="/frontendfun/home" element={<Home />} />
-          <Route path="/frontendfunJokes" element={<Jokes />} />
-          <Route path="/Reader" element={<Reader />} />
+          <Route path="/frontendfun/Jokes" element={<Jokes />} />
+          <Route path="/frontendfun/Reader" element={<Reader />} />
         </Routes>
       </BrowserRouter>
 
