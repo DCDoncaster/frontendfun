@@ -5,7 +5,7 @@ function NotFound() {
   const [joke, setJoke] = React.useState('');
 
   React.useEffect(() => {
-    fetch('https://v2.jokeapi.dev/joke/Any?type=single')
+    fetch('https://v2.jokeapi.dev/joke/Programming,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single')
       .then((response) => response.json())
       .then((data) => setJoke(data.joke));
   }, []);
