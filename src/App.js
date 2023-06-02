@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="*" element={<NotFound />} />
+          <Route path="/frontendfun" element={<Reader />} />
           <Route path="/home" element={<Home />} />
           <Route path="/Jokes" element={<Jokes />} />
           <Route path="/Reader" element={<Reader />} />
