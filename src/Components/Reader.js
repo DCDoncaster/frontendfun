@@ -3,7 +3,7 @@ import Article from "./Article";
 
 function Reader() {
   const [articles, setArticles] = useState([]);
-  const [subreddit, setSubreddit] = useState("frontend");
+  const [subreddit, setSubreddit] = useState("fruit");
   const [subredditTitle, setSubredditTitle] = useState("");
   
     //get community info
